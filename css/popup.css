@@ -1,0 +1,73 @@
+.popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color:rgba(211, 211, 211, 0.4) ;
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald' , sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 100;
+}
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.popup__content {
+    background-color: #18191A;
+    color: #fff;
+    width: 20%;
+    height: 35%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transform: perspective(1000px) translate(0,-100%) rotateX(45deg);
+    transition: 0.4s;
+}
+.popup.open .popup__content {
+    transform: perspective(1000px) translate(0,0) rotateX(0);
+}
+ 
+.popup__input {
+    margin-left: 8%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    background-color: black;
+    color: #fff;
+}
+.popup-btn {
+    margin-left: 8%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #E2B024;
+}
+
+.btn-close {
+    margin-top: 10px;
+    padding: 10px 30px;
+} 
+.popup__input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #000 !important; /* Цвет фона */
+    -webkit-text-fill-color: #E2B024 !important; /* цвет текста */
+    color: #E2B024 !important; /* цвет текста */
+    z-index: 0;
+}

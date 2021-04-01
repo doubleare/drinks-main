@@ -1,0 +1,98 @@
+.contact {
+    background-color: #000;
+    padding: 150px 0;
+    color: #fff;
+}
+.contact__title {
+    font-family: 'ChocolateBox';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 95px;
+}
+.contact__title span{
+    color: #E2B024;
+}
+.contact__row {
+    justify-content: space-between;
+}
+.contact__description {
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 207.6%;
+    margin-bottom: 77px;
+    margin-top: 0px;
+}
+
+
+.contact__form {
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    width: 100%;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    padding-left: 3%;
+}
+.contact__input {
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 3% 0;
+    position: relative;
+    z-index: 2;
+    color: #E2B024;
+    font-size: 24px;
+}
+.contact__input:focus {
+    outline: none;
+}
+
+.contact__placeholder {
+    box-sizing: border-box;
+    border-radius: 20%;
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    left:5%;
+    top:-18%;
+    padding: 0 15px;
+    transition: 0.4s ;
+    text-align: center;
+}
+
+.contact__input_filled + .contact__placeholder,
+.contact__input:focus + .contact__placeholder {
+    top: -70%;
+    left: 5%;
+}
+.btn-yellow {
+    padding: 10px 54px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 171.6%;
+    background-color:  #E2B024;
+    color: #18191A;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.contact__input:-webkit-autofill {
+    width: 80%;
+    -webkit-box-shadow: inset 0 0 0 50px #000 !important; /* Цвет фона */
+    -webkit-text-fill-color: #E2B024 !important; /* цвет текста */
+    color: #E2B024 !important; /* цвет текста */
+    z-index: 0;
+}

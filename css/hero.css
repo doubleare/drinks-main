@@ -1,0 +1,51 @@
+.hero {
+    background-color: #000;
+    padding-top: 190px;
+    color:#fff;
+}
+.hero__content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.hero__subtitle {
+    font-family: 'ChocolateBox';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 14px;
+}
+.hero__title {
+    font-family: 'ChocolateBox';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 56px;
+    margin: 32px 0 24px;
+
+}
+.hero__title span {
+    color: #E2B024;
+}
+.hero__description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+.hero__link {
+    margin-bottom: 50px;
+    padding-bottom: 3px;
+    transition: 0.3s;
+    font-family: 'ChocolateBox';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 9px;
+}
+.hero__link:hover { 
+    color: #E2B024;
+    border-bottom: 1px solid #E2B024;
+}
